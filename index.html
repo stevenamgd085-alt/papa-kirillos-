@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>البابا كيرلس</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background: #f4f4f4;
+    }
+
+    textarea {
+      width: 90%;
+      height: 40px;
+    }
+
+    .level-box {
+      display: flex;
+      justify-content: space-around;
+      margin: 10px 0;
+    }
+
+    .level {
+      flex: 1;
+      margin: 0 5px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .level input {
+      width: 90%;
+      margin-top: 5px;
+    }
+
+    .excellent { background: #d4f8d4; } /* أخضر فاتح */
+    .average { background: #fff6cc; }   /* أصفر فاتح */
+    .weak { background: #ffd6d6; }      /* أحمر فاتح */
+  </style>
+</head>
+<body>
+  <header>📖 البابا كيرلس - دفتر المذاكرة</header>
+
+  <div class="container">
+    <h3>تاريخ اليوم: <span id="today"></span></h3>
+
+    <table>
+      <tr>
+        <th>المادة</th>
+        <th>ملاحظات</th>
+        <th>التقييم</th>
+      </tr>
+      <tr>
+        <td>فيزياء</td>
+        <td><textarea placeholder="أكتب ملاحظاتك هنا..."></textarea></td>
+        <td>
+          <div class="level-box">
+            <div class="level excellent">ممتاز<br><input type="text"></div>
+            <div class="level average">متوسط<br><input type="text"></div>
+            <div class="level weak">ضعيف<br><input type="text"></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>كيمياء</td>
+        <td><textarea placeholder="أكتب ملاحظاتك هنا..."></textarea></td>
+        <td>
+          <div class="level-box">
+            <div class="level excellent">ممتاز<br><input type="text"></div>
+            <div class="level average">متوسط<br><input type="text"></div>
+            <div class="level weak">ضعيف<br><input type="text"></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>عربي</td>
+        <td><textarea placeholder="أكتب ملاحظاتك هنا..."></textarea></td>
+        <td>
+          <div class="level-box">
+            <div class="level excellent">ممتاز<br><input type="text"></div>
+            <div class="level average">متوسط<br><input type="text"></div>
+            <div class="level weak">ضعيف<br><input type="text"></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>إنجليزي</td>
+        <td><textarea placeholder="أكتب ملاحظاتك هنا..."></textarea></td>
+        <td>
+          <div class="level-box">
+            <div class="level excellent">ممتاز<br><input type="text"></div>
+            <div class="level average">متوسط<br><input type="text"></div>
+            <div class="level weak">ضعيف<br><input type="text"></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>تاريخ</td>
+        <td><textarea placeholder="أكتب ملاحظاتك هنا..."></textarea></td>
+        <td>
+          <div class="level-box">
+            <div class="level excellent">ممتاز<br><input type="text"></div>
+            <div class="level average">متوسط<br><input type="text"></div>
+            <div class="level weak">ضعيف<br><input type="text"></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>رياضيات</td>
+        <td><textarea placeholder="أكتب ملاحظاتك هنا..."></textarea></td>
+        <td>
+          <div class="level-box">
+            <div class="level excellent">ممتاز<br><input type="text"></div>
+            <div class="level average">متوسط<br><input type="text"></div>
+            <div class="level weak">ضعيف<br><input type="text"></div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    // عرض تاريخ اليوم تلقائي
+    const today = new Date();
+    document.getElementById("today").innerText = today.toLocaleDateString("ar-EG");
+  </script>
+</body>
+</html>
